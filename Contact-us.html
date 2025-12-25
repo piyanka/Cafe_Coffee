@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header id="contact-header">
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./Home.html/#about-us">About Us</a></li>
+          <li><a href="./Home.html/#menu">Menu</a></li>
+          <li><a href="./Timing.html">Timings</a></li>
+        </ul>
+      </nav>
+
+      <figure>
+        <img
+          src="./Assets/cafe_coffee_project.jpg"
+          alt="Image of Restaurant"
+          width="400"
+        />
+        <figcaption>Welcome to The Mocha Cafe</figcaption>
+      </figure>
+    </header>
+    <hr />
+    <main>
+      <article>
+        <h2>Our Contact Form</h2>
+        <fieldset>
+          <legend>Send Us a Message</legend>
+          <form action="./submit-form" method="post">
+            <label for="user-name">Name:</label>
+            <input
+              id="user-name"
+              type="text"
+              name="user-name"
+              placeholder="Your Name"
+              required
+            />
+            <br /><br />
+            <label for="user-email">Email:</label>
+            <input
+              id="user-email"
+              type="email"
+              name="user-email"
+              placeholder="Your Email"
+              required
+            />
+            <br /><br />
+            <label for="contact-reason">Reason for Contact:</label>
+            <select id="contact-reason" name="contact-reason" required>
+              <option value="" diabled selected>Select a Contact Reason</option>
+              <option value="general">General</option>
+              <option value="hygeine">hygeine</option>
+              <option value="product-quality">Product Quality</option>
+              <option value="other">Other</option>
+              
+            </select>
+
+            <br /><br />
+
+            <label for="message">Message:</label>
+            <br />
+            <textarea
+              row="4"
+              cols="50"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+          </form>
+        </fieldset>
+        <br />
+        <button type="reset">Reset</button>
+        <button type="send">Send</button>
+      </article>
+
+      <section>
+        <h2>Our Location</h2>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448182.739080682!2d76.813072!3d28.646677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd35b6fbbf0d%3A0x8fbd1c8b6b0f0f0!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </section>
+      <br />
+      <a href="#contact-header">Back to Top</a>
+    </main>
+    <hr />
+    <footer>
+      <p>Made with ❤️ by Priyanka Kumari</p>
+      <p>Copyright &copy; 2025 The Mocha Cafe</p>
+    </footer>
+  </body>
+</html>
